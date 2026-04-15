@@ -1,0 +1,16 @@
+def validate_order(symbol, side, order_type, quantity, price):
+    # basic checks — not overkill
+    if not symbol:
+        raise ValueError("Symbol is required")
+
+    if side.upper() not in ["BUY", "SELL"]:
+        raise ValueError("Side must be BUY or SELL")
+
+    if order_type.upper() not in ["MARKET", "LIMIT"]:
+        raise ValueError("Order type must be MARKET or LIMIT")
+
+    if quantity <= 0:
+        raise ValueError("Quantity should be greater than 0")
+
+    if order_type.upper() == "LIMIT" and price is None:
+        raise ValueError("Price is required for LIMIT orders")

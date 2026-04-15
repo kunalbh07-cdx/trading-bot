@@ -1,0 +1,4 @@
+2026-04-15 13:49:27,054 | WARNING | MOCK MODE: Order simulated
+2026-04-15 13:49:27,055 | INFO | Mock Response -> {'orderId': 592260, 'status': 'FILLED', 'executedQty': 0.01, 'avgPrice': 'market'}
+2026-04-15 13:49:30,168 | WARNING | MOCK MODE: Order simulated
+2026-04-15 13:49:30,169 | INFO | Mock Response -> {'orderId': 189125, 'status': 'FILLED', 'executedQty': 0.01, 'avgPrice': 60000.0}
